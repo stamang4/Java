@@ -1,5 +1,7 @@
 package variables;
+
 import java.util.*;
+
 public class SwapDemo {
 
 	int fno;
@@ -7,7 +9,7 @@ public class SwapDemo {
 
 	Scanner sc = new Scanner(System.in);
 
-	//non-static Method/instance Methods
+	// non-static Method/instance Methods
 	void swap() {
 		System.out.println("Enter First Number ");
 		fno = sc.nextInt();
@@ -17,7 +19,7 @@ public class SwapDemo {
 		int temp = 0;
 		System.out.println("Before Swapping : ");
 		System.out.println("Fno : " + fno + " Sno : " + sno);
-		//swapping
+		// swapping
 		temp = fno;
 		fno = sno;
 		sno = temp;
@@ -32,6 +34,18 @@ public class SwapDemo {
 
 		demo.swap();
 		System.out.println(demo.fno + "\t" + demo.sno);
+
+		// int 123a; Invalid Variables can't start with number
+
+		// int @aba = 199; //Variables can't start with @
+		// System.out.println(@aba);
+		
+		int $aba = 99;
+		System.out.println($aba);
+
+		int _aba = 199;
+		System.out.println(_aba);
+
 	}
 
 }
